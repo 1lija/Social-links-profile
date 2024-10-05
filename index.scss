@@ -1,7 +1,7 @@
 $grey700: hsl(0, 0%, 20%);
 $grey800: hsl(0, 0%, 12%);
 $grey900: hsl(0, 0%, 8%);
-$white: hsl(0, 0%, 100%);
+$white: hsl(0, 0%, 82%);
 $green: hsl(75, 94%, 57%);
 $font-size: 14px;
 
@@ -23,12 +23,91 @@ background-color: black;
 
     width: 300px;
     height: 500px;
-    // border:1px solid red;
-    border-radius: 5%;
+    border-radius: 10px;
     background-color: $grey800;
 
     position: relative;
     top:50%;
     left:50%;
     translate: 0 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+        .social-links--description{
+            width: 80%;
+            height: 25%;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            
+            .social-links--avatar{
+                width: 70px;
+                height: 70px;    
+                border-radius: 50%;
+            }
+
+            .about--name{
+                width: max-content;
+                height: 30px;
+                color: $white;
+                font-weight: 500;
+                font-size: 20px;
+            }
+
+            .about--location{
+                color: $green;
+                text-align: center;
+                font-weight: 700;
+                font-size: 11px;
+            }
+            
+        }
+
+        .span--description{
+            color: $white;
+            font-size: $font-size;
+            height: 50px;
+            padding-top: 15px;
+        }
+        
+
+        .footer--links{
+            width: 90%;
+            height: 55%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            .footer--button{
+                width: 100%;
+                height: 40px;
+                border-radius: 5px;
+                color: $white;
+                background-color: $grey700;
+                border: none;
+                font-size: 15px;
+                font-weight: 700;
+
+                &:hover{
+                    cursor: pointer;
+                    background-color: $green;
+                    
+                }
+
+            }
+
+        }
+
+
+}
+
+@media (max-width: 320px) {
+    .social-links--profile{
+        translate: -50% 25%
+    }
 }

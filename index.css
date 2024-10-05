@@ -17,10 +17,74 @@ body {
 .social-links--profile {
   width: 300px;
   height: 500px;
-  border-radius: 5%;
+  border-radius: 10px;
   background-color: hsl(0, 0%, 12%);
   position: relative;
   top: 50%;
   left: 50%;
   translate: 0 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.social-links--profile .social-links--description {
+  width: 80%;
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.social-links--profile .social-links--description .social-links--avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.social-links--profile .social-links--description .about--name {
+  width: -moz-max-content;
+  width: max-content;
+  height: 30px;
+  color: hsl(0, 0%, 82%);
+  font-weight: 500;
+  font-size: 20px;
+}
+.social-links--profile .social-links--description .about--location {
+  color: hsl(75, 94%, 57%);
+  text-align: center;
+  font-weight: 700;
+  font-size: 11px;
+}
+.social-links--profile .span--description {
+  color: hsl(0, 0%, 82%);
+  font-size: 14px;
+  height: 50px;
+  padding-top: 15px;
+}
+.social-links--profile .footer--links {
+  width: 90%;
+  height: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.social-links--profile .footer--links .footer--button {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  color: hsl(0, 0%, 82%);
+  background-color: hsl(0, 0%, 20%);
+  border: none;
+  font-size: 15px;
+  font-weight: 700;
+}
+.social-links--profile .footer--links .footer--button:hover {
+  cursor: pointer;
+  background-color: hsl(75, 94%, 57%);
+}
+
+@media (max-width: 320px) {
+  .social-links--profile {
+    translate: -50% 25%;
+  }
 }/*# sourceMappingURL=index.css.map */
